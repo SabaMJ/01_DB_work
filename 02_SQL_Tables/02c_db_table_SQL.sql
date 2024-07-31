@@ -30,6 +30,6 @@ INSERT INTO test VALUES ();
 
 -- Doppelte Datensätze werden NICHT mehr zugelassen !
 
-
+INSERT INTO test(age,name) VALUES (35,"Alonzo");
 /* ---- Inhalte der Tabelle anzeigen ---- */
 SELECT * FROM test;

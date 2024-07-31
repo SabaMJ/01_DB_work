@@ -12,7 +12,12 @@
 DROP TABLE IF EXISTS boo.test;
 
 /* Tab. test anlegen, falls noch nicht vorhanden*/
-
+CREATE TABLE if NOT EXISTS boo.test 
+    ( 
+        id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+        name VARCHAR(20) NOT NULL DEFAULT "TBA" ,
+        age INT NOT NULL DEFAULT 0
+    )
 
 /* Alle Tabellen in der DB anzeigen */
 #SHOW TABLES;
