@@ -17,10 +17,10 @@ CREATE TABLE if NOT EXISTS boo.test
         id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
         name VARCHAR(20) NOT NULL DEFAULT "TBA" ,
         age INT NOT NULL DEFAULT 0
-    )
+    );
 
 /* Alle Tabellen in der DB anzeigen */
-#SHOW TABLES;
+SHOW TABLES;
 
 /* Struktur der Tabelle anzeigen */
 DESCRIBE boo.test;
